@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body class="body">
+  <style>
+    *{
+    padding: 0;
+    margin: 0;
+}
+.body{
+    height: 915px;
+    background:  rgb(52, 119, 52);
+}
+
+/* menu */
+ul, #myUL {
+    list-style-type: none;
+  }
+#myUL {
+    margin: 0;
+    padding: 0;
+  }
+  .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: 
+    rgba(255, 255, 255, 0.3);
+    height: 110px;
+    width: 150px;
+    border-radius: 0 0 50px 0;
+  }
+
+  .on{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: whitesmoke;
+    height: 70px;
+    width: 70px;
+    border: 7px solid chartreuse;
+    border-radius: 50%;
+    background: black;
+  }
+
+  .caret {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      position: relative;
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari 3.1+ */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none;
+  }  
+  .caret::before {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: red;
+      color: black;
+      display: inline-block;
+    margin-right: 6px;
+  }
+  
+  .caret-down::before {
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Safari */
+    transform: rotate(90deg);  
+  }
+  .home{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+  }
+  .nested{
+      display: none;
+      justify-content: center;
+      align-items: center;
+      font-size: 40px;
+  }
+  
+  .active {
+    display: block;
+  } 
+  .socialll{
+    display: flex;
+    margin: 20px;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    border: 1.75px solid chartreuse;
+    box-shadow: 1px 1px 1em white;
+  }
+.li{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+  }
+
+.link{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row; 
+}
+.img{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: none;
+    border: none;
+}
+.h1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: none;
+    border: none;
+    color: chartreuse;}
+  </style>
+    
+        <ul id="myUL">
+          <li><span class="caret"><div class="title">
+              <img class="on" src="https://img.icons8.com/ios-filled/64/7fff00/chevron-down.png"/>
+        </div></span>
+            <ul class="home">
+              <div class="socialll">
+              <li class="li"><div class="link">
+                <button class="img"><img src="https://img.icons8.com/metro/55/7fff00/home.png"/>
+                  <button class="h1"><h1> Home</h1></button></div></li>
+              <li class="li"><div class="link">
+                <button class="img"><img src="https://img.icons8.com/ios-filled/55/7fff00/user.png"/>
+                  <button class="h1"><h1> Sur Moi</h1></button></div></li>
+              <li class="li"><div class="link">
+                <button class="img">
+                  <img src="https://img.icons8.com/ios-filled/55/7fff00/collaboration.png"/>
+                  <button class="h1"><h1> collaborations</h1></button></div></li>
+              <li class="li"><div class="link"><button class="img">
+                <img src="https://img.icons8.com/ios-filled/55/7fff00/service.png"/>
+                <button class="h1"><h1> Services</h1></button></div></li>
+              <li class="li"><div class="link"><button class="img">
+                <img src="https://img.icons8.com/sf-black-filled/55/7fff00/question-mark.png"/>
+                <button class="h1"><h1> Aide</h1></button></div></li>
+              </div>
+            </ul>
+          </li>
+          </ul>
+
+    <script src="code.js"></script>
+</body>
+</html>
